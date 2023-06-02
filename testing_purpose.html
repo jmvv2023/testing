@@ -1,0 +1,234 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>IT Testing Training</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<script src="js/arriba.js"></script>
+		<script src="js/zoom.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-xlarge.css" />
+		</noscript>
+	</head>
+	<body id="top">
+
+		<!-- Header -->
+			<header id="header" class="skel-layers-fixed">
+				<h1><a href="http://automationsrv1:8081/TestingReport/">TESTING tool</a></h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="testing_purpose.html">Purpose</a></li>
+						<li><a href="testing_process.html">Process</a></li>
+						<li><a href="testing_levels.html">Levels</a></li>
+						<li><a href="test_techniques.html">Techniques</a>
+							<ul><li>
+							<a href="test_techniques_GUI.html">GUI testing</a>
+							<a href="test_techniques_Domain.html">Domain testing</a>
+							<a href="test_techniques_Paths.html">Paths testing</a>
+							</li></ul>
+						</li>			
+						<li><a href="test_design.html">Design</a>
+							<ul>
+							<a href="test_design_Examples.html">Test Cases</a>
+							</ul>
+						</li>
+						<li><a href="test_execution.html">Execution</a>
+							<ul>
+							<a href="bug_report.html">Write bug</a>
+							</ul>
+						</li>	
+					</ul>						
+				</nav>
+			</header>
+
+		<!-- Main -->
+		<section id="main" class="wrapper style2">
+			<header class="major">
+					<h2>Testing Purpose</h2>
+					<h3>Purpose of software testing, depth of testing and effort shall be aligned to solution integrity.</h3>
+			</header>
+		</section>
+			<section id="main" class="wrapper style1">
+				<div class="container">
+					<div class="row">
+						<div class="8u">
+							<section>
+								<h2><strong>PURPOSE OF SW Testing</strong></h2>
+								<p>Software has become almost inevitable in today’s world, the technology has so evolved that we find it everywhere.
+								While to err is human, sometimes the cost of a mistake might be just too high.
+								Software projects can fail for many reasons, but the most significant causes fall into two broad categories:</p>
+								<h5>- Not building the software right</br>
+								- Not building the right software</h5>
+								
+								<p>The <b>purpose of testing</b> is contribute to make sure the released software is safe and functions as expected.
+								It is often defined as “the degree of conformance to explicit or implicit requirements and expectations”.
+								These so-called explicit and implicit expectations correspond to the two basic levels of testing: </p>
+								
+								<p><b>Functional:</b> The product’s compliance with functional (explicit) requirements and design specifications. 
+								This aspect focuses on the practical use of software, from the point of	view of the user: its features, performance,
+								ease of use, absence of defects.</p>
+								<p><b>Non-Functional</b> System’s inner characteristics and architecture, i.e. structural(implicit) requirements. 
+								This includes the code maintainability, understandability, efficiency and security.</p>
+																
+								<section id = "what">
+									<h3>What is software testing?</h3>
+									<p>Testing is the <a href="testing_process.html">process</a> of evaluating a system or its component(s) with he intent to find whether it satisfies the 
+									specified requirements or not. It includes activities and task like Test planning, Test analysis,  Test development, 
+									Test execution, Test results, Bug tracking and Reporting..</p>
+								</section>
+								
+								<section id = "why">
+									<h3>Why software testing is required?</h3>
+									<p>Is required to identify issues, defects, isolate subjected to fixes and ensure a quality product.</p>
+								</section>
+								
+								<section id = "when">
+									<h3>When do we test a software?</h3>
+									<p>This depends on various factors and based on testing objectives, but in general terms, should be started as soon as possible.</p>
+								</section>
+								
+								<section id = "who">
+									<h3>Who is responsible for testing the software?</h3>
+									<p>Test engineer’s, QA analysts, Programmer analysts..., we should accept the fact that its not that easy (as one thinks) to test,
+									it requires the different skills in different levels for different responsabilities.</p>
+								</section>
+									
+								<section id = "where">
+									<h3>Where does software testing takes place?</h3>
+									<p>Its everywhere, but to be specific in the service and product based organisations, the test environment shall be an equivalent production environment.</p>
+								</section>
+								
+								<section id = "how">
+									<h3>How is Software testing performed?</h3>
+									<p>Testing is one of the process of a software life cycle.It includes test planning, analysis, design, execution, reporting and maintenance.</p>
+								</section>
+							</section>
+							<hr />
+							<section>
+								<h2><strong>DEPTH OF TESTING AND EFFORT</strong></h2>
+								<p>The depth of testing is directly related to the test effort required and shall be aligned with the solution 
+								complexity, criticality, risk, safety level, security level or other characteristics that define the importance 
+								of the system or functionality.</p>
+								
+								<p>Following, we present the four levels of effort and the minimum depth of testing recommended by effort level: </p>
+								
+								<section id = "effortL">
+									<h3>Test effort <strong>low. </strong></h3>
+									<p>Test effort level recommended when a possible failure has noticeable effect on system, but only creates inconvenience to the user. 
+									Remember include regulatory and/or quality criteria.</p>
+									<li><strong>GUI testing:</strong> based on the access and layout</li>
+									<li><strong>Domain testing:</strong> Normal values based on usage profiles</li>
+									<li><strong>Paths testing:</strong> Positive and Negative</li>
+									<li><strong>Complementary testing:</strong> Exploratory test</li> </br>
+								</section>
+
+								<section id = "effortM">
+									<h3>Test effort <strong>moderate. </strong></h3>
+									<p>Test effort level recommended when a possible failure affects important performance of the system, but workaround is available. 
+									Remember include regulatory and/or quality criteria.</p>
+									<li><strong>GUI testing:</strong> Based on the access and layout</li>
+									<li><strong>Domain testing:</strong> Boundary values (using equivalence partition); Basic CRUD (create, read, update and delete)</li>
+									<li><strong>Paths testing:</strong> Positive paths (testing of input values that should be processed successfully); Negative paths 
+									(input values that should not process).</li>
+									<li><strong>Complementary testing:</strong> Exploratory test</li></br>
+								</section>
+
+								<section id = "effortMA">
+									<h3>Test effort <strong>major. </strong></h3>
+									<p>Test effort level recommended when a possible failure affects important performance of the system. 
+									Remember include regulatory and/or quality criteria.</p>
+									<li><strong>GUI testing:</strong> Based on the access and layout</li>
+									<li><strong>Domain testing:</strong> Boundary values (including special characters); Constrains; Basic CRUD</li>
+									<li><strong>Paths testing:</strong> Positive paths (testing of input values that should be processed successfully); Negative paths 
+									(input values that should NOT process but do provide an appropriate error processing, such as an error notification message to a user).</li>
+									<li><strong>Complementary testing:</strong> Exploratory; Error guessing.</li></br>
+								</section>
+
+								<section id = "effortH">
+									<h3>Test effort <strong>high. </strong></h3>
+									<p>Test effort level recommended when a possible failure affects features affects critical performance of the system. 
+									Remember include regulatory and/or quality criteria.</p>
+									<li><strong>GUI testing:</strong> Access, Actions and Layout</li>
+									<li><strong>Domain testing:</strong> Extended CRUD (Boundaries and Constraints included)</li>
+									<li><strong>Paths testing:</strong> Positive/Negative paths (Input constraints and Output constraints); States transactions; 
+									Recovery test (how well a system recovers from crashes, hardware failures or other problems).</li>
+									<li><strong>Complementary testing:</strong> Exploratory; Error guessing; Error handling.</li>
+								</section>
+							</section>
+						</div>
+						
+						<div class="4u">
+								<h3>TABLE OF CONTENTS</h4>
+								<hr />
+								<h4>PURPOSE OF TESTING</h4>
+								<ul >
+									<li><a href="#what">What is software testing?</a></li>
+									<li><a href="#why">Why software testing is required?</a></li>
+									<li><a href="#when">When do we test a software?</a></li>
+									<li><a href="#who">Who is responsible for testing?</a></li>
+									<li><a href="#where">Where does testing takes place?</a></li>
+									<li><a href="#how">How is software testing performed?</a></li>
+								</ul>				
+								<h4>TEST EFFORT</h4>
+								<ul>
+									<li><a href="#effortL">Test effort low</a></li>
+									<li><a href="#effortM">Test effort moderate</a></li>
+									<li><a href="#effortMA">Test effort major</a></li>
+									<li><a href="#effortH">Test effort high</a></li>
+								</ul>
+								<h4>TEST PROCESS</h4>
+								<ul>
+									<li><a href="testing_process.html">Plan & Control</a></li>
+									<li><a href="testing_process.html">Analysis & Design</a></li>
+									<li><a href="testing_process.html">Execution & Closure</a></li>
+								</ul>
+								<h4>TESTING Levels</h4>
+								<ul >
+									<li><a href="testing_levels.html">Unit test</a></li>
+									<li><a href="testing_levels.html">Integration test</a></li>
+									<li><a href="testing_levels.html">System test</a></li>
+									<li><a href="testing_levels.html">Performance test</a></li>
+									<li><a href="testing_levels.html">UAT test</a></li>
+								</ul>
+								<h4>TESTING Techniques</h4>
+								<ul >
+									<li><a href="test_techniques.html">GUI testing</a></li>
+									<li><a href="test_techniques.html">Norrmal values </a></li>
+									<li><a href="test_techniques.html">Equivalence partition</a></li>
+									<li><a href="test_techniques.html">Boundary values</a></li>
+									<li><a href="test_techniques.html">CRUD</a></li>
+									<li><a href="test_techniques.html">CRUD extended</a></li>
+								</ul>
+								<hr/>
+								<h3>TESTING REFERENCES</h4>
+								<ul >
+								<a class="icon far fa-cloud-download label" href="pdf/GHTI-CTRL-000214.pdf" target = "_blank">  Test Process</a><br>
+								<a class="icon far fa-cloud-download label" href="pdf/GHTI-CTRL-000214.pdf" target = "_blank">  Test Procedure</a><br>
+								<a class="icon far fa-cloud-download label" href="pdf/GHTI-CTRL-000214.pdf" target = "_blank">  Master Test Plan template</a><br>
+								<a class="icon far fa-cloud-download label" href="pdf/GHTI-CTRL-000214.pdf" target = "_blank">  Test Summary Report template</a>									
+								</ul>
+
+						</div>
+					</div>
+				</div>
+			</section>
+			
+		<!-- Footer -->
+			<footer id="footer">
+					<ul class="copyright">
+						<li>&copy; 2019 GRIFOLS. IT Testing training.</li>
+					</ul>
+			</footer>
+		<i class="icon fa-chevron-circle-up ir-arriba" ></i>
+	</body>
+</html>

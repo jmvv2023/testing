@@ -1,0 +1,278 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>IT Testing Training</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<script src="js/arriba.js"></script>
+		<script src="js/zoom.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-xlarge.css" />
+		</noscript>
+	</head>
+	
+
+	
+	<body id="top">
+
+		<!-- Header -->
+			<header id="header" class="skel-layers-fixed">
+				<h1><a href="http://automationsrv1:8081/TestingReport/">TESTING tool</a></h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>						
+						<li><a href="testing_purpose.html">Purpose</a></li>
+						<li><a href="testing_process.html">Process</a></li>
+						<li><a href="testing_levels.html">Levels</a></li>
+						<li><a href="test_techniques.html">Techniques</a> 
+						<i class="icon fad fa-caret-down"></i>
+							<ul><li>
+							<a href="test_techniques_GUI.html">GUI testing</a>
+							<a href="test_techniques_Domain.html">Domain testing</a>
+							<a href="test_techniques_Paths.html">Paths testing</a>
+							</li></ul>
+						</li>			
+						<li><a href="test_design.html">Design</a>
+						<i class="icon fad fa-caret-down"></i>
+							<ul>
+							<a href="test_design_Examples.html">Test Cases</a>
+							</ul>
+						</li>
+						<li><a href="test_execution.html">Execution</a>
+						<i class="icon fad fa-caret-down"></i>
+							<ul>
+							<a href="bug_report.html">Write bug</a>
+							</ul>
+						</li>	
+					</ul>						
+				</nav>
+			</header>
+
+		<!-- Main -->
+		<section id="main" class="wrapper style2">
+				<header class="major">
+					<h2>Testing Levels</h2>
+					<h3>Testing is performed at various levels in a software development life cycle</h3>
+				</header>
+		</section>
+			<section id="main" class="wrapper style1">
+				<div class="container">
+					<div class="row">
+						<div class="8u">
+							<section>
+								<h2><strong>TESTING LEVELS</strong></h2>
+								<p>This content show the differents levels of testing to understand a complete testing.</p>
+								
+								
+								<table class="table table-responsive table-striped">
+									<thead>
+										<tr>
+											<th></th>
+											<th>Unit test</th>
+											<th>Integration test</th>
+											<th>System test</th>
+											<th>Performance test</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><strong>Why</strong></td>
+											<td>To ensure code is developed correctly</td>
+											<td>To make sure the ties between the system components function as required</td>
+											<td>To ensure the whole system works well when integrated</td>
+											<td>To ensure customer’s and end user expectations are met</td>
+										</tr>
+										<tr>
+											<td><strong>Who</strong></td>
+											<td>Developers /  Technical Architects</td>
+											<td>Developers / Technical testers</td>
+											<td>Test Analyst /  Business Analyst / Product Owner</td>
+											<td>Technical testers</td>
+										</tr>
+										<tr>
+											<td><strong>What</strong></td>
+											<td>All new code + refactoring code</td>
+											<td>New web services, components, controllers, etc.</td>
+											<td>Verification of features, flows and restrictions.</td>
+											<td>Performance and security testing.</td>
+										</tr>
+										<tr>
+											<td><strong>When</strong></td>
+											<td>As soon as new code is written</td>
+											<td>As soon as new components are added</td>
+											<td>When the product is complete</td>
+											<td>When the product is ready to be shipped</td>
+										</tr>
+										<tr>
+											<td><strong>Where</strong></td>
+											<td>Local Dev + Continuous Integration (CI, as a part of the build</td>
+											<td>Local Dev + CI(part of the build) / Test Environment</td>
+											<td>Test Environment</td>
+											<td>CI / Test  environnement / Staging Environnent</td>
+										</tr>
+										<tr>
+											<td><strong>How</strong></td>
+											<td>Automated (Junit, TestNG, PHPUnit)</td>
+											<td>Usually automated, (Soap UI, Rest Client)</td>
+											<td>Manual or Automated Testing (TAS)</td>
+											<td>Manual or Automated</td>
+										</tr>
+									</tbody>
+								</table>
+
+								<h3><strong>Unit</Strong> Test</h3>
+								<p>A unit is a module or a small set of modules, in other words, an unit is the smallest part of an application that is ready to test, like functions, classes, procedures, interfaces, 
+								<b>Unit testing</b> is the first level testing by which individual units of source code are tested to determine if they are ready for use.
+								To simply define, <b>Unit testing</b> is testing the smallest available unit.</p>
+								<p>
+									<ul>
+									<strong>Entry Criteria:</strong>
+										<li>Requirements are at least 80% complete and approved</li>
+										<li>Technical Design has been finalized and approved</li>
+										<li>Environment setup is completed and is stable</li>
+										<li>Code development for the module is complete</li>
+									</ul>
+
+									<ul>
+									<strong>Exit Criteria:</strong>
+										<li>Code has version control in place</li>
+										<li>No known major or critical defects are pending</li>
+										<li>A testing transition meeting has be held</li>
+										<li>Project Manager approval has been received</li>
+									</ul>
+								Unit testing is performed by development team, although a tester can help, it requires detailed knowledge of the internal program design and code.
+								The units are tested in isolation which ensures the component is working according to the detailed design/build specifications of the module. Also known as component, module or programtesting.
+								</p></hr>
+
+								<h3><strong>Integration</Strong> Test</h3>
+								<p>A system is made up of different components or modules (individual units). Testing the interactions between such modules is called as <b>Integration testing</b>. 
+								The integration tets starts with testing the interactions between few modules and ends when all the interfaces of different systems are integrated.
+								</p></hr>
+								
+								
+								<h3><strong>System</Strong> Test</h3>
+								<p>System testing of software is defined as the “task conducted to evaluate whether a complete and integrated software system meets the required requirements”. 
+								Thus system testing is a process that requires creation of test cases for every functional point of the software and execution of the test cases to confirm whether 
+								specified requirements are matched. In case of failure of a test, a defect is logged that is fixed by the development team and again re-tested. The system test can 
+								therefore be described by the following steps:
+								<ul>
+									Test strategy; Requirements analysis; Test planning; Creation of test scripts based on requirements; Execution of test scripts on the software product; Reporting
+									of defects; Retesting of fixed defects and Test Closure.
+								</ul>	
+								The <b>System testing</b> may require involvement of other systems but this should be minimized as much as possible to reduce the risk of external factors.
+								Testing the interaction with other systems comes in System-Integration Testing phase, not test level.
+								System test is all about verifying the functional design specifications and seeing how all the modules integrated work together. </br></br>
+								<ul>
+									<strong>Entry Criteria:</strong>
+									<li>Unit Testing and integration for modules is Completed</li>
+									<li>A System testing environment has been established</li>
+									<li>The System testing strategy and schedule is approved</li>
+									</br>
+									<strong>Exit Criteria:</strong>
+									<li>Application meets all documented business, functional and quality requirements</li>
+									<li>No known critical defects prevent moving to the follow phases</li>
+									<li>All appropriate teams have approved the completed tests</li>
+									<li>The test results are availables</li>
+								</ul>
+								</p>
+								<h3><strong>User Acceptance</Strong> Test</h3>
+								<p>Acceptance testing is normally done by the Customers or Business users. The testing moves from the IT department to the hands of business people who define certain number of test cases 
+								that are used to execute and accept the product. This is also known as ‘Beta Testing’, ‘Application Testing’, and ‘End user Testing’.
+								Acceptance tests are executed to verify if the product meets the acceptance criteria defined during the requirements phase.
+								<ul>
+									<strong>Entry Criteria:</strong>
+									<li>Previous testing completed</li>
+									<li>Business requirements have been met.</li>
+									<li>UAT test scripts are ready for execution</li>
+									<li>The testing environment is established</li>
+								</ul>
+						
+									<ul><strong>Exit Criteria:</strong>
+									<li>UAT has been completed and approved</li>
+									<li>Change control is managing modifications and enhancements</li>
+									<li>Business sponsor agrees that known defects do not affect product release</li>
+								</ul>
+								</p>
+							</section>	
+						</div>
+						
+						<div class="4u">
+
+								<h3></h3>
+								<hr />
+								<h4>PURPOSE OF TESTING</h4>
+								<ul >
+									<li><a href="#what">What is software testing?</a></li>
+									<li><a href="#why">Why software testing is required?</a></li>
+									<li><a href="#when">When do we test a software ?</a></li>
+									<li><a href="#who">Who is responsible for testing ?</a></li>
+									<li><a href="#where">Where does testing takes place ?</a></li>
+									<li><a href="#how">How is software testing performed ?</a></li>
+								</ul>				
+								<h4>TEST EFFORT</h4>
+								<ul>
+									<li><a href="#effortL">Test effort low</a></li>
+									<li><a href="#effortM">Test effort moderate</a></li>
+									<li><a href="#effortMA">Test effort major</a></li>
+									<li><a href="#effortH">Test effort high</a></li>
+								</ul>
+								<h4>TEST PROCESS</h4>
+								<ul>
+									<li><a href="testing_process.html">Plan & Control</a></li>
+									<li><a href="testing_process.html">Analysis & Design</a></li>
+									<li><a href="testing_process.html">Execution & Closure</a></li>
+								</ul>
+								<h4>TESTING Levels</h4>
+								<ul >
+									<li><a href="testing_levels.html">Unit test</a></li>
+									<li><a href="testing_levels.html">Integration test</a></li>
+									<li><a href="testing_levels.html">System test</a></li>
+									<li><a href="testing_levels.html">Performance test</a></li>
+									<li><a href="testing_levels.html">UAT test</a></li>
+								</ul>
+								<h4>TESTING Techniques</h4>
+								<ul >
+									<li><a href="test_techniques.html">GUI testing</a></li>
+									<li><a href="test_techniques.html">Norrmal values </a></li>
+									<li><a href="test_techniques.html">Equivalence partition</a></li>
+									<li><a href="test_techniques.html">Boundary values</a></li>
+									<li><a href="test_techniques.html">CRUD</a></li>
+									<li><a href="test_techniques.html">CRUD extended</a></li>
+								</ul>
+
+								<hr/>
+								<h3>TESTING REFERENCES</h4>
+								<ul >
+								<a class="icon far fa-cloud-download label" href="pdf/GHTI-CTRL-000214.pdf" target = "_blank">  Test Process</a><br>
+								<a class="icon far fa-cloud-download label" href="pdf/GHTI-CTRL-000214.pdf" target = "_blank">  Test Procedure</a><br>
+								<a class="icon far fa-cloud-download label" href="pdf/GHTI-CTRL-000214.pdf" target = "_blank">  Master Test Plan template</a><br>
+								<a class="icon far fa-cloud-download label" href="pdf/GHTI-CTRL-000214.pdf" target = "_blank">  Test Summary Report template</a>									
+								</ul>
+								<hr/>
+								<h3>INTEGRATION vs SYSTEM Test</h4>
+								<section class="image fit">
+								<img src="images/Integration_VS_System.jpg" class="zoom" /> 
+								</section>
+						</div>									
+					</div>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">	
+					<ul class="copyright">
+						<li>&copy; 2019 GRIFOLS. IT Testing training.</li>
+					</ul>
+			</footer>
+		<i class="icon fa-chevron-circle-up ir-arriba" ></i>
+	</body>
+</html>

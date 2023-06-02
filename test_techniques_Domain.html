@@ -1,0 +1,218 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Testing Training</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<script src="js/arriba.js"></script>
+		<script src="js/zoom.js"></script>
+		<noscript>
+
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-xlarge.css" />
+		</noscript>
+	</head>
+	<body id="top">
+
+		<!-- Header -->
+			<header id="header" class="skel-layers-fixed">
+				<h1><a href="http://automationsrv1:8081/TestingReport/">TESTING tool</a></h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="testing_purpose.html">Purpose</a></li>
+						<li><a href="testing_process.html">Process</a></li>
+						<li><a href="testing_levels.html">Levels</a></li>
+						<li><a href="test_techniques.html">Techniques</a>
+							<ul><li>
+							<a href="test_techniques_GUI.html">GUI testing</a>
+							<a href="test_techniques_Domain.html">Domain testing</a>
+							<a href="test_techniques_Paths.html">Paths testing</a>
+							</li></ul>
+						</li>			
+						<li><a href="test_design.html">Design</a>
+							<ul>
+							<a href="test_design_Examples.html">Test Cases</a>
+							</ul>
+						</li>
+						<li><a href="test_execution.html">Execution</a>
+							<ul>
+							<a href="bug_report.html">Write bug</a>
+							</ul>
+						</li>	
+					</ul>						
+				</nav>
+			</header>
+
+		<!-- Main -->
+		<section id="main" class="wrapper style2">
+				<header class="major">
+					<h2>Dynamic Techniques</h2>
+					<h3>Techniques as standardized methods allow to evolve from a specific test basis to a set of test cases</h3>
+				</header>
+		</section>
+			<section id="main" class="wrapper style1">
+				<div class="container">
+					<div class="row">
+						<div class="8u">
+						
+							<section>
+																
+								<h3><strong>Normal values.</Strong> Domain testing</h3>
+								<p>The aim to use this technique is to test the system with the normal values to each user profile to check that the behavior is proper. For each user profile available in the system, we will test the valid values that the system must accept to verify the correct functioning of the system.</p>
+								<p>Example:
+								We have a toll to record the working hours, the range is 8 to 168, representing the working hours of month.<br>
+								Step 1: Identify accepted or normal values: 8 ≤ x ≤ 168<br>
+								Step 2: Choose one accepted or normal values to be test: Ex: 100</p> 
+
+								<h3><strong>Equivalence Partition.</Strong> Domain Testing</h3>
+								<p>Equivalence Partitioning is a common black box testing technique and aims to reduce the number of redundant test cases by eliminating those that generate the same output and do not necessarily reveal defects in a program functionality.
+								Continue with the previous example: <br><br> Step 1: Identify Valid and Invalid partitions:<br>
+								<section class="image fit">
+								<img src="images/partition01.jpg"> 
+								</section>
+								
+								Step 2: Choose the test case each partition to be tested.<br><br>
+								<section class="image fit">
+								<img src="images/partition02.jpg"> 
+								</section> 
+								</p>
+								
+								<h3><strong>Boundary Values.</Strong> Domain Testing</h3>
+								<p>Boundary value analysis extends equivalence partitioning by focusing on data at the “edges” of an equivalence class. A greater number of errors tend to occur at the boundaries of the input domain rather than in the “center”. Boundary value analysis is a test case design technique that complements equivalence partitioning.
+									Continue with the previous example, the next step identify the boundary values: <br> 
+									<section class="image fit">
+									<img src="images/boundary01.jpg"> 
+									</section>
+									Step 3, optimize the number of test cases to execute based on boundary values:<br><br>
+									<ul>
+									TC1 (Invalid input): 7 <br>
+									TC1 (Valid input): 8 <br>
+									TC1 (Valid input): 168 <br>
+									TC1 (Invalid input): 169 <br>
+									</ul>
+								</p>
+								
+								<h3><strong>Constraints.</Strong> Domain Testing</h3>
+								<p>A constraint is the state of being checked, restricted, or compelled to avoid or perform some action.  That’s mean, the conflict (between two actions), affecting the optimal fulfillment of an intended goal. 
+									To verify the constraints, we must take into account the following: Identify and prioritize the constraints, and decide how to exploit and manage it.<br> 
+									Continue with the previous example, a restriction could be that the 'hours by month' field is a positive integer type value. Consecuently additional to previous test cases shall be check that the system not allow: <br> 
+									<ul>•	Alfabetic characters, special characters, negative integer and decimal values.</ul>
+									In general terms, the test techniques shall be evaluate in order to stablish a strategy combination of these
+								</p>
+								
+								<h3><strong>Basic CRUD.</Strong> Domain Testing</h3>
+								<p>Once analysed the software specifications; this technique allow the product testing maintain a logical structure (Create, Read, Update and Delete) according to the product definition and test conditions required.<br> 
+									<ul>•	Create (New, Add, Insert…):
+										Keep in mind: Create a new item one at a time with a valid value; create a duplicate item; create more than one item in a single shot (if applicable).
+									</ul>
+									<ul>•	Read (View, Select, Open…):
+										Keep in mind: Read an existing item one at a time; read more than one existing items at a time; read a non-existing item; read in a sorted order (such as sort a grid in ascending or descending order); read an item based on wild cards (such as search or filter items).
+									</ul>
+									<ul>•	Update (Edit, Modify, Change…): 
+										Keep in mind: Update an existing item one at a time; update more than one existing items; update a non-existing item.
+									</ul>
+									<ul>•	Delete (Remove, Trash, Erase…):
+										Keep in mind: Delete an existing item one at a time; delete more than one existing items; delete a non-existing item.
+									</ul>
+								</p>
+								
+								<h3><strong>Extended CRUD.</Strong> Domain Testing</h3>
+								<p>With the aim of improving the CRUD technique, we can make use of the extended version. This consists in carrying out an additional reading each time a modification is made. After creating, updating or deleting, a reading will be made to verify that the action has been done correctly.<br> 
+									<section class="image fit">
+									<img src="images/extendedCRUD.jpg"> 
+									</section>
+									Also, starting from the base of the Basic CRUD, the techniques of Boundary value and Constraints are combined. The Update and Delete categories remain without changes. What changes with respect to the basic CRUD are the Create and Update categories. They would be as follows:
+									</p>
+									Create (New, Add, Insert…):
+									<ul>
+									<li>Create a new item with a value smaller than the minimum value of the valid partition.</li>
+									<li>Create a new item with the minimum value of the valid partition.</li>
+									<li>Create a new item with an invalid value.</li>
+									<li>Create a duplicate item.</li>
+									<li>Create more than one item in a single shot (if applicable).</li>
+									</ul>
+									Update (also termed as Edit, Modify, Change…): 
+									<ul>
+									<li>Update an existing item with a value larger than the maximum value of the valid partition.</li>
+									<li>Update a new item with the maximum value of the valid partition.</li>
+									<li>Update a new item with an invalid value.</li>
+									<li>Update more than one existing items.</li>
+									<li>Update a non-existing item.</li>
+									</ul>	
+							</section>
+							
+						</div>
+						<div class="4u">
+								<h3>TABLE OF CONTENTS</h4>
+								<hr />
+								<h4>PURPOSE OF TESTING</h4>
+								<ul >
+									<li><a href="#what">What is software testing?</a></li>
+									<li><a href="#why">Why software testing is required?</a></li>
+									<li><a href="#when">When do we test a software ?</a></li>
+									<li><a href="#who">Who is responsible for testing ?</a></li>
+									<li><a href="#where">Where does testing takes place ?</a></li>
+									<li><a href="#how">How is software testing performed ?</a></li>
+								</ul>				
+								<h4>TEST EFFORT</h4>
+								<ul>
+									<li><a href="#effortL">Test effort low</a></li>
+									<li><a href="#effortM">Test effort moderate</a></li>
+									<li><a href="#effortMA">Test effort major</a></li>
+									<li><a href="#effortH">Test effort high</a></li>
+								</ul>
+								<h4>TEST PROCESS</h4>
+								<ul>
+									<li><a href="testing_process.html">Plan & Control</a></li>
+									<li><a href="testing_process.html">Analysis & Design</a></li>
+									<li><a href="testing_process.html">Execution & Closure</a></li>
+								</ul>
+								<h4>TESTING Levels</h4>
+								<ul >
+									<li><a href="testing_levels.html">Unit test</a></li>
+									<li><a href="testing_levels.html">Integration test</a></li>
+									<li><a href="testing_levels.html">System test</a></li>
+									<li><a href="testing_levels.html">Performance test</a></li>
+									<li><a href="testing_levels.html">UAT test</a></li>
+								</ul>
+								<h4>TESTING Techniques</h4>
+								<ul >
+									<li><a href="test_techniques.html">GUI testing</a></li>
+									<li><a href="test_techniques.html">Norrmal values </a></li>
+									<li><a href="test_techniques.html">Equivalence partition</a></li>
+									<li><a href="test_techniques.html">Boundary values</a></li>
+									<li><a href="test_techniques.html">CRUD</a></li>
+									<li><a href="test_techniques.html">CRUD extended</a></li>
+								</ul>
+								<hr/>
+								<h3>TESTING REFERENCES</h4>
+								<ul >
+								<a class="icon far fa-cloud-download label" href="pdf/GHTI-CTRL-000214.pdf" target = "_blank">  Test Process</a><br>
+								<a class="icon far fa-cloud-download label" href="pdf/GHTI-CTRL-000214.pdf" target = "_blank">  Test Procedure</a><br>
+								<a class="icon far fa-cloud-download label" href="pdf/GHTI-CTRL-000214.pdf" target = "_blank">  Master Test Plan template</a><br>
+								<a class="icon far fa-cloud-download label" href="pdf/GHTI-CTRL-000214.pdf" target = "_blank">  Test Summary Report template</a>									
+								</ul>
+																
+						</div>	
+					</div>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">	
+					<ul class="copyright">
+						<li>&copy; 2019 GRIFOLS. IT Testing training.</li>
+					</ul>
+			</footer>
+		<i class="icon fa-chevron-circle-up ir-arriba" ></i>
+	</body>
+</html>

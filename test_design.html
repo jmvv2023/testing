@@ -1,0 +1,267 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Testing Training</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<script src="js/arriba.js"></script>
+		<script src="js/zoom.js"></script>
+		<noscript>
+
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-xlarge.css" />
+		</noscript>
+	</head>
+	<body id="top">
+
+		<!-- Header -->
+			<header id="header" class="skel-layers-fixed">
+				<h1><a href="http://automationsrv1:8081/TestingReport/">TESTING tool</a></h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="testing_purpose.html">Purpose</a></li>
+						<li><a href="testing_process.html">Process</a></li>
+						<li><a href="testing_levels.html">Levels</a></li>
+						<li><a href="test_techniques.html">Techniques</a>
+							<ul><li>
+							<a href="test_techniques_GUI.html">GUI testing</a>
+							<a href="test_techniques_Domain.html">Domain testing</a>
+							<a href="test_techniques_Paths.html">Paths testing</a>
+							</li></ul>
+						</li>			
+						<li><a href="test_design.html">Design</a>
+							<ul>
+							<a href="test_design_Examples.html">Test Cases</a>
+							</ul>
+						</li>
+						<li><a href="test_execution.html">Execution</a>
+							<ul>
+							<a href="bug_report.html">Write bug</a>
+							</ul>
+						</li>	
+					</ul>						
+				</nav>
+			</header>
+
+		<!-- Main -->
+		<section id="main" class="wrapper style2">
+				<header class="major">
+					<h2>Test Protocol Design</h2>
+					<h3>The test protocol is a grouping of test cases based on the test techniques defined</h3>
+				</header>
+		</section>
+			<section id="main" class="wrapper style1">
+				<div class="container">
+					<div class="row">
+						<div class="8u">
+							<section>
+								<h2><strong>Test Analysis</strong></h2>
+								<p>Test analysis is the activity which defines <strong>WHAT</strong> need to be tested. This activity starts with the static test and finish when the test cases are approved. 
+								It is the key activity to obtain the more efficient and effective test cycle.</p>
+								<p>The test analysis shall allow identify in the early states of the solution errors or failures in the specifications and identify the testing types and techniques 
+								appropriate to verify the solution under test.</p>
+								<p>In order to assure the test cases design activity meets with the expectative, it is required to define standardization in the test case design activity, from a specific 
+								test basis with the goal to obtain the maximum possible test coverage with the minimum number of test cases. 
+								To bear in main:</p>
+								<ul>
+									<li>It is not possible to test everything; it is required to find a balance that allows covering all the specifications with the minor cost as possible</li>
+									<li>Identify the risk functionalities as its mitigation. Use the Risk analysis to perform it.</li>
+									<li>In dependence of the test strategy, it is required to determinate which test design techniques are the most appropriated to obtain the desired coverage</li>
+									<li>The application of these techniques in whole test cases is that provides the success in the test case specification design activity</li>
+								</ul>
+								
+								<h3>Analysis tasks</h3>
+								<p>The requirements review and is to be done for elucidation to identify actual and expected results of testing.<br>
+								Identification of requirements and gaps, non functional requirements such as usability, scalability, testability, maintainability, performance and security should be take aconunt.<br>
+								All requirements that cannot be tested due to system and test environment constraints should be communicated to the solution responsable team. <br>
+								During this phase, the testing team reviews and analyses the requirements and identifies the tests, which are to be performed and sets priorities for testing, the test environment 
+								requirement includes the hardware and software requirements under which the required software is to be tested. </p>
+								
+															
+							
+								<h2><strong>Test Cases</strong></h2>
+								<p>A test case is defined as a set of inputs, a set of execution conditions and an expected result, created with a specific goal. The test case is a part of a methodical and critical process by 
+								which an application or any of its components are executed with the basic goal of defects detection. This execution has to be performed in planned and repeatable circumstances.</br>
+								The concepts involved in the test case design are the following:</p>
+								<ul>
+									<li>Every test situation occurs in at least 1 one test case</li>
+									<li>A logical test case covers 1 or more test situation</li>
+									<li>Every logical test case is worked out concretely into 1 physical test case</li>
+									<li>Every physical test case occurs in 1 test script</li>
+								</ul>
+								<p><strong>Test situation:</strong> A test situation is an isolated condition under which the test object displays a specific behaviour that needs to be tested.</br>
+								<strong>Test Cases:</strong> A test case is used to examine whether the system displays the desired behaviour under specific circumstances. The goal of a test case 
+								is to demonstrate objectively that the specification or requirement subject of test is implemented successfully. That means there are not differences between specifications and the implemented.</br> 
+								<strong>Test Script:</strong> In a test script, multiple physical test cases are combined to be able to execute them in an efficient and simple manner. 
+								General rules:</p>
+								<ul>
+									<li>Minimum entity inside a test.</li>
+									<li>It is not possible to be divided and it must be executed in the order stablished.</li>
+									<li>Clearly present the test target and identify the casuistry that them provides coverage.</li>
+									<li>It is not allowed to use own codes neither acronyms not defined in the project glossary.</li>
+									<li>Traceability: Recommended each test case should trace to only one specification; a specification could be traced by more than one test case.</li>
+									<li>Test case structure: Precondition and Steps; action to perform and re-action of the system.</li>
+								</ul>
+								
+								<h3><strong>Cause and effect</strong></h3>
+								<p>To design a test cases are necessary to bear in mind relate Causes <strong>inputs</strong> to Effects <strong>outputs</strong>. A “Cause” stands for a separate input condition that fetches about an internal change in the 
+								system. An “Effect” represents an output condition, a system transformation or a state resulting from a combination of causes. </br></br>
+								For example: When the power button is pressed <strong>cause</strong>, the light comes on <strong>effect</strong>.	</p>
+								
+								<h3><strong>Positive and Negative test case</strong></h3>
+								<p>There are test cases aimed at checking the correct operation of the claimed functionality using the correct input format specified in 
+								the software documentation.<br>
+								There are test cases that check your anticipated every possible situation that should lead to an error message. Also, this type of test cases 
+								includes a verification that can lead to unexpected situations, ie those that are not described in the documentation.<br>
+								The combination of the two characteristics provide a complete coverage of the every possible situations.</p>
+								
+								<h3><strong>Test Case Attributes</strong></h3>
+								
+								<h3>Precondition</h3>
+								<p>Details the environment conditions and the state that the test case must satisfy before the test steps execution starts.
+								General rules:</p>
+								<ul>
+									<li>Mandatory element</li>
+									<li>Presents clearly the data needed to cover the beginning of the test target, including all the required steps to prepare the environment and meet the objective of the test</li>
+								</ul>
+								<table class="table table-responsive table-striped">
+									<thead>
+										<tr>
+											<th style="color:green;">Correct  Precondition</th>
+											<th style="color:red;" >Incorrect Precondition</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><b>Precondition:</b> Make sure that there is a patient with the following characteristics:</br>
+												Weigh = 80kg </br>
+												Dose = 0.1 ml
+											</td>
+											<td><b>Precondition:</b> Make sure that you have the correct inputs to execute this test</td>
+										</tr>
+										<tr>
+											<td><b>Precondition:</b> Make sure that the read process in the ‘Gestión de Medicamentos’ section is activated.</td>
+											<td><b>Precondition:</b> Make sure that the process is activated.</td>
+										</tr>
+									</tbody>
+								</table>
+																
+								
+								<h3>Step description</h3>
+								<p>Steps: Actions to execute with the goal to obtain a determinate result.
+								General rules:</p>
+								<ul>
+									<li>A Test case could contain unlimited number of test steps. It is advisable to limit the number of the steps in order to facilitate its comprehension and to simplify the executions</li>
+									<li>A Test case identifies as unique each test step</li>
+									<li>Each step describes an action and the expected result after the action has been performed</li>
+								</ul>
+								
+								<h3>Test Situations</h3>
+								<p>Test situation is an isolated condition under which the test object displays a specific behaviour that needs to be tested.
+								Situations to be considered for different scenarios:</p>
+								<ul>
+									<li>Input data and response to these entries</li>
+									<li>Process and error management</li>
+									<li>Reports</li>
+									<li>Functional flows</li>
+								</ul>
+								
+								
+								
+								<p><a href="test_design_Examples.html">See: <b>Test cases examples</b></a></p>
+								
+								
+								
+	
+							</section>
+							
+							
+						</div>
+						<div class="4u">
+								<h3>TABLE OF CONTENTS</h4>
+								<hr />
+								<h4>PURPOSE OF TESTING</h4>
+								<ul >
+									<li><a href="#what">What is software testing?</a></li>
+									<li><a href="#why">Why software testing is required?</a></li>
+									<li><a href="#when">When do we test a software ?</a></li>
+									<li><a href="#who">Who is responsible for testing ?</a></li>
+									<li><a href="#where">Where does testing takes place ?</a></li>
+									<li><a href="#how">How is software testing performed ?</a></li>
+								</ul>				
+								<h4>TEST EFFORT</h4>
+								<ul>
+									<li><a href="#effortL">Test effort low</a></li>
+									<li><a href="#effortM">Test effort moderate</a></li>
+									<li><a href="#effortMA">Test effort major</a></li>
+									<li><a href="#effortH">Test effort high</a></li>
+								</ul>
+								<h4>TEST PROCESS</h4>
+								<ul>
+									<li><a href="testing_process.html">Plan & Control</a></li>
+									<li><a href="testing_process.html">Analysis & Design</a></li>
+									<li><a href="testing_process.html">Execution & Closure</a></li>
+								</ul>
+								<h4>TESTING Levels</h4>
+								<ul >
+									<li><a href="testing_levels.html">Unit test</a></li>
+									<li><a href="testing_levels.html">Integration test</a></li>
+									<li><a href="testing_levels.html">System test</a></li>
+									<li><a href="testing_levels.html">Performance test</a></li>
+									<li><a href="testing_levels.html">UAT test</a></li>
+								</ul>
+								<h4>TESTING Techniques</h4>
+								<ul >
+									<li><a href="test_techniques.html">GUI testing</a></li>
+									<li><a href="test_techniques.html">Norrmal values </a></li>
+									<li><a href="test_techniques.html">Equivalence partition</a></li>
+									<li><a href="test_techniques.html">Boundary values</a></li>
+									<li><a href="test_techniques.html">CRUD</a></li>
+									<li><a href="test_techniques.html">CRUD extended</a></li>
+								</ul>
+								<h4>TEST Design</h4>
+								<ul >
+									<li><a href="test_design.html">Test Analysis</a></li>
+									<li><a href="test_design.html">Test cases </a></li>
+									<li><a href="test_design.html">Cause Effect</a></li>
+									<li><a href="test_design.html">Positive & Negative TC</a></li>
+									<li><a href="test_design.html">Test Case Attributes</a></li>
+										<ul><ul><li><a href="test_design_Examples.html">  TC Examples</a></li></ul></ul>
+								</ul>
+								<h4>TESTING Execution</h4>
+								<ul >
+									<li><a href="test_execution.html">Test Protocol Execution</a></li>
+									<li><a href="test_execution.html">Actual results </a></li>
+								</ul>
+								<hr/>
+								<h3>TESTING REFERENCES</h4>
+								<ul >
+								<a class="icon far fa-cloud-download label" href="pdf/GHTI-CTRL-000214.pdf" target = "_blank">  Test Process</a><br>
+								<a class="icon far fa-cloud-download label" href="pdf/GHTI-CTRL-000214.pdf" target = "_blank">  Test Procedure</a><br>
+								<a class="icon far fa-cloud-download label" href="pdf/GHTI-CTRL-000214.pdf" target = "_blank">  Master Test Plan template</a><br>
+								<a class="icon far fa-cloud-download label" href="pdf/GHTI-CTRL-000214.pdf" target = "_blank">  Test Summary Report template</a>									
+								</ul>
+																
+						</div>	
+					</div>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">	
+					<ul class="copyright">
+						<li>&copy; 2019 GRIFOLS. IT Testing training.</li>
+					</ul>
+			</footer>
+		<i class="icon fa-chevron-circle-up ir-arriba" ></i>
+	</body>
+</html>

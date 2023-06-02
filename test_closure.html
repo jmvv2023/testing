@@ -1,0 +1,183 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Testing Training</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<script src="js/arriba.js"></script>
+		<script src="js/zoom.js"></script>
+		<noscript>
+
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-xlarge.css" />
+		</noscript>
+	</head>
+	<body id="top">
+
+		<!-- Header -->
+			<header id="header" class="skel-layers-fixed">
+				<h1><a href="http://automationsrv1:8081/TestingReport/">TESTING tool</a></h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="testing_purpose.html">Purpose</a></li>
+						<li><a href="testing_process.html">Process</a></li>
+						<li><a href="testing_levels.html">Levels</a></li>
+						<li><a href="test_techniques.html">Techniques</a>
+							<ul><li>
+							<a href="test_techniques_GUI.html">GUI testing</a>
+							<a href="test_techniques_Domain.html">Domain testing</a>
+							<a href="test_techniques_Paths.html">Paths testing</a>
+							</li></ul>
+						</li>			
+						<li><a href="test_design.html">Design</a>
+							<ul>
+							<a href="test_design_Examples.html">Test Cases</a>
+							</ul>
+						</li>
+						<li><a href="test_execution.html">Execution</a>
+							<ul>
+							<a href="bug_report.html">Write bug</a>
+							</ul>
+						</li>	
+					</ul>						
+				</nav>
+			</header>
+
+		<!-- Main -->
+		<section id="main" class="wrapper style2">
+				<header class="major">
+					<h2>Test Closure</h2>
+					<h3>Importance of Test Closure Activities in Testing Process</h3>
+				</header>
+		</section>
+			<section id="main" class="wrapper style1">
+				<div class="container">
+					<div class="row">
+						<div class="8u">
+							<section>
+								<h3>Test Closure</h3>
+								<p>Along the test case execution, it is required to inform the Actual Result and the Test status of each step.
+								To bear in main:</p>
+								<ul>
+									<li>Collect the execution results</li>
+									<li>Identify all issues detected </li>
+									<li>Stablish the traceability between the defect and the associated test case</li>
+								</ul>
+							
+								<h2><strong>ACTUAL RESULTS</strong></h2>
+								<p>It is informed the observed result when the result has been executed. It must be indicated clearly and completely describing exactly how the system behaves at this situation.</p>
+								<h3>Expected result meets Actual result</h3>
+								<ul>
+									<li>Both elements contain exactly the same information</li>
+									<li>The Test Status is<em style="color:green;"> PASS</em></li>
+								</ul>
+								
+								<h3>Expected result does not meet with the Actual result</h3>
+								<ul>
+									<li>Reports clearly and complete the observed test result</li>
+									<li>The Test Status is<em style="color:red;"> FAIL</em></li>
+									<li>It is registered the defect in the system and it is traced to the Test Case</li>
+								</ul>
+								<h3>Expected result does not meet with the Actual result</h3> 
+								<p>The expected result does not met with the actual result due to there is a deficiency in the test case, 
+								although the observed behaviour is correct in the application as is designed in the specifications.</p>
+								<ul>
+									<li>It must be indicated clearly and completely describing exactly how the system behaves at this situation, indicating the error in the test case: 
+									<em style="color:black;">“Note: Incorrect Expected Result. The correct Expected Result is....”</em></li>
+									<li>The Test Status is<em style="color:green;"> PASS</em></li>
+									<li>The documental error of the test cases must be registered in order to solved</li>
+								</ul>
+								<h3>Step with expected result NA</h3>
+								<ul>
+									<li>The steps with expected result informed as NA are executed as part of test cases</li>
+									<li>Actual result NA and the rest of the steps are PASS.  Test Status is<em style="color:green;"> PASS</em></li>
+								</ul>
+								<h3>Test status</h3> 
+								<p>The test status of a test case has dependences with each one of the different steps that are part of the TC</p>
+								<ul>
+									<li>Test Status is <em style="color:green;"> PASS</em> when all the Steps included in the Test Case are Pass</li>
+									<li>Test Status is <em style="color:red;"> FAIL</em> when any of its steps is Fail</li>
+									<li>Test Status is <em style="color:orange;"> NOT COMPLETED</em> when any of its Steps has not been completed</li>
+								</ul>
+								
+								
+	
+	
+							</section>
+							
+							
+						</div>
+						<div class="4u">
+								<h3>TABLE OF CONTENTS</h4>
+								<hr />
+								<h4>PURPOSE OF TESTING</h4>
+								<ul >
+									<li><a href="#what">What is software testing?</a></li>
+									<li><a href="#why">Why software testing is required?</a></li>
+									<li><a href="#when">When do we test a software ?</a></li>
+									<li><a href="#who">Who is responsible for testing ?</a></li>
+									<li><a href="#where">Where does testing takes place ?</a></li>
+									<li><a href="#how">How is software testing performed ?</a></li>
+								</ul>				
+								<h4>TEST EFFORT</h4>
+								<ul>
+									<li><a href="#effortL">Test effort low</a></li>
+									<li><a href="#effortM">Test effort moderate</a></li>
+									<li><a href="#effortMA">Test effort major</a></li>
+									<li><a href="#effortH">Test effort high</a></li>
+								</ul>
+								<h4>TEST PROCESS</h4>
+								<ul>
+									<li><a href="testing_process.html">Plan & Control</a></li>
+									<li><a href="testing_process.html">Analysis & Design</a></li>
+									<li><a href="testing_process.html">Execution & Closure</a></li>
+								</ul>
+								<h4>TESTING Levels</h4>
+								<ul >
+									<li><a href="testing_levels.html">Unit test</a></li>
+									<li><a href="testing_levels.html">Integration test</a></li>
+									<li><a href="testing_levels.html">System test</a></li>
+									<li><a href="testing_levels.html">Performance test</a></li>
+									<li><a href="testing_levels.html">UAT test</a></li>
+								</ul>
+								<h4>TESTING Techniques</h4>
+								<ul >
+									<li><a href="test_techniques.html">GUI testing</a></li>
+									<li><a href="test_techniques.html">Norrmal values </a></li>
+									<li><a href="test_techniques.html">Equivalence partition</a></li>
+									<li><a href="test_techniques.html">Boundary values</a></li>
+									<li><a href="test_techniques.html">CRUD</a></li>
+									<li><a href="test_techniques.html">CRUD extended</a></li>
+								</ul>
+								<hr/>
+								<h3>TESTING REFERENCES</h4>
+								<ul >
+								<a class="icon far fa-cloud-download label" href="pdf/GHTI-CTRL-000214.pdf" target = "_blank">  Test Process</a><br>
+								<a class="icon far fa-cloud-download label" href="pdf/GHTI-CTRL-000214.pdf" target = "_blank">  Test Procedure</a><br>
+								<a class="icon far fa-cloud-download label" href="pdf/GHTI-CTRL-000214.pdf" target = "_blank">  Master Test Plan template</a><br>
+								<a class="icon far fa-cloud-download label" href="pdf/GHTI-CTRL-000214.pdf" target = "_blank">  Test Summary Report template</a>									
+								</ul>
+																
+						</div>	
+					</div>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">	
+					<ul class="copyright">
+						<li>&copy; 2019 GRIFOLS. IT Testing training.</li>
+					</ul>
+			</footer>
+		<i class="icon fa-chevron-circle-up ir-arriba" ></i>
+	</body>
+</html>
